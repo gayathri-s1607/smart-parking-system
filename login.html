@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align:center;">
+
+<h2>Login</h2>
+
+<input id="name" placeholder="Name"><br><br>
+<input id="phone" placeholder="Phone"><br><br>
+<input id="vehicle" placeholder="Vehicle Number"><br><br>
+
+<button onclick="next()">Submit</button>
+
+<script>
+function next(){
+  localStorage.setItem("name", name.value);
+  localStorage.setItem("phone", phone.value);
+  localStorage.setItem("vehicle", vehicle.value);
+  window.location = "places.html";
+}
+</script>
+
+</body>
+</html>
